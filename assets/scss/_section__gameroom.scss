@@ -1,0 +1,160 @@
+.section--game {
+  max-width: 884px;
+}
+
+.timer {
+  width: 152px;
+  height: 184px;
+  display: flex;
+  position: absolute;
+  left: -5px;
+  top: -30px;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  background: url('../img/game/timer.webp') no-repeat center center/cover;
+  z-index: 2;
+
+  span {
+    width: 100%;
+    padding-left: 14px;
+    color: var(--blue);
+    font-weight: 600;
+    position: relative;
+    z-index: 2;
+    font-size: 13px;
+    transform: rotate(5deg) translate(39px, 11px);
+  }
+}
+
+.game-panel__score {
+  display: inline-flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  width: 100%;
+  height: 35px;
+  background: url('../img/main/navigation-bg.webp') repeat-x center center;
+  background-size: 1px 35px;
+  color: var(--blue);
+  margin-top: 18px;
+  margin-bottom: 4px;
+  &:before {
+    content: '';
+    left: 50%;
+    top: 0px;
+    margin-left: -147px;
+    display: block;
+    position: absolute;
+    width: 294px;
+    height: 35px;
+    background: url('../img/game/panel-score-bg.webp') no-repeat center center/contain;
+  }
+
+  span {
+    display: inline-block;
+    position: relative;
+    font-size: 18px;
+    line-height: 1;
+  }
+}
+
+.game-panel {
+  display: flex;
+  position: relative;
+  width: 100%;
+  max-width: 714px;
+  height: 180px;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  background: url('../img/game/panel-bg.webp') no-repeat center top;
+  background-size: 714px auto;
+  z-index: 1;
+  margin-top: -10px;
+
+  .footer {
+    a {
+      margin-top: 5px;
+    }
+    .sound-button {
+      right: 5px;
+      bottom: 15px;
+    }
+  }
+}
+
+.game-panel__counters {
+  display: flex;
+  position: relative;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  gap: 13.5px;
+  margin-bottom: 0px;
+  margin-top: 7.5px;
+  li {
+    width: 60px;
+    text-align: center;
+    span {
+      font-size: 15px;
+      line-height: 1;
+      font-weight: 600;
+    }
+    picture {
+      display: flex;
+      position: relative;
+      width: 60px;
+      height: 52px;
+      justify-content: center;
+      align-items: center;
+      align-content: center;
+      margin-bottom: 5px;
+      img {
+        position: absolute;
+        max-width: 100%;
+        max-height: 100%;
+      }
+      &.active {
+        background: url('../img/svg/ok-border.svg') no-repeat center center;
+        background-size: 100% 100%;
+        &:before {
+          content: '';
+          display: block;
+          width: 12px;
+          height: 12px;
+          border-radius: 12px;
+          position: absolute;
+          right: 9px;
+          top: -4px;
+          flex-shrink: 0;
+          background: url('../img/svg/ok.svg') no-repeat center center;
+          background-size: 100% 100%;
+          z-index: 2;
+        }
+      }
+    }
+  }
+}
+
+.level-iframe {
+  display: flex;
+  width: 100%;
+  height: calc(100svh - 214px);
+  position: relative;
+  max-width: 884px;
+  z-index: 1;
+  border: none;
+}
+
+.test000 {
+  display: block;
+  background: url('../img/preloader.webp') no-repeat center center;
+  background-size: 300% auto;
+  width: 100%;
+  height: calc(100vh - 172px);
+}

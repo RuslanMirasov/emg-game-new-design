@@ -1,0 +1,41 @@
+.button {
+  display: inline-flex;
+  gap: 20px;
+  overflow: hidden;
+  z-index: 1;
+  min-height: 50px;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  position: relative;
+  font-size: 24px;
+  line-height: 1;
+  color: var(--blue-dark);
+  font-family: var(--got);
+  padding: 8px 40px 12px 40px;
+  z-index: 1;
+  user-select: none;
+  outline: none;
+  border-radius: 50px;
+  text-transform: uppercase;
+  background: var(--white);
+  letter-spacing: -0.1em;
+  text-shadow: 1px 0 var(--blue-dark), -1px 0 var(--blue-dark), 0px 1px var(--blue-dark);
+
+  &.button--blue {
+    background: var(--color);
+    color: var(--white);
+    text-shadow: 1px 0 var(--white), 0px 1px var(--white);
+  }
+
+  &.full {
+    width: 100%;
+    min-width: 100%;
+  }
+
+  &.small {
+    font-size: 18px;
+    min-height: 46px;
+    padding: 8px 20px 12px 20px;
+  }
+}

@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/x-icon" href="./../assets/img/favicon.ico" />
+    <meta name="theme-color" content="#001136" />
+    <meta name="description" content="Рейтинг призовой реальности" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/choices.js/public/assets/styles/choices.min.css" />
+    <link rel="stylesheet" href="./../assets/css/styles.min.css" />
+    <title>Рейтинг призовой реальности</title>
+  </head>
+  <body class="body">
+    <!--PRELOADER-->
+    <div class="preloader" data-preloader>
+      <div class="preloader__content">
+        <div class="preloader__video">
+          <video autoplay loop muted playsinline preload="auto">
+            <source src="./../assets/img/preloader.mp4" type="video/mp4" />
+          </video>
+        </div>
+        <span>Открываем<br />призовую<br />реальность</span>
+      </div>
+    </div>
+
+    <main class="main">
+      <section class="section section--scores">
+        <h1 class="title title--h2">Рейтинг <br />призовой реальности</h1>
+
+        <select data-select name="time-period" onchange="console.log({name:this.name, value: this.value})" class="filter">
+          <option value="01.06.2025-05.06.2025">01.06.2025&nbsp;-&nbsp;05.06.2025</option>
+          <option value="08.06.2025-12.06.2025">08.06.2025&nbsp;-&nbsp;12.06.2025</option>
+          <option value="15.06.2025-19.06.2025">15.06.2025&nbsp;-&nbsp;19.06.2025</option>
+          <option value="22.06.2025-26.06.2025">22.06.2025&nbsp;-&nbsp;26.06.2025</option>
+          <option value="29.06.2025-03.07.2025">29.06.2025&nbsp;-&nbsp;03.07.2025</option>
+        </select>
+
+        <table class="results">
+          <thead>
+            <tr>
+              <th>МЕСТО</th>
+              <th>ТЕЛЕФОН</th>
+              <th>КАРТА</th>
+              <th>СОБРАНО</th>
+              <th>ВРЕМЯ</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>*0000</td>
+              <td>*0000</td>
+              <td>60</td>
+              <td>00:23,345</td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>*0000</td>
+              <td>*0000</td>
+              <td>60</td>
+              <td>00:23,345</td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td>*0000</td>
+              <td>*0000</td>
+              <td>60</td>
+              <td>00:23,345</td>
+            </tr>
+            <tr>
+              <td>4</td>
+              <td>*0000</td>
+              <td>*0000</td>
+              <td>60</td>
+              <td>00:23,345</td>
+            </tr>
+            <tr>
+              <td>5</td>
+              <td>*0000</td>
+              <td>*0000</td>
+              <td>60</td>
+              <td>00:23,345</td>
+            </tr>
+            <tr>
+              <td>6</td>
+              <td>*0000</td>
+              <td>*0000</td>
+              <td>60</td>
+              <td>00:23,345</td>
+            </tr>
+            <tr>
+              <td>7</td>
+              <td>*0000</td>
+              <td>*0000</td>
+              <td>60</td>
+              <td>00:23,345</td>
+            </tr>
+            <tr>
+              <td>8</td>
+              <td>*0000</td>
+              <td>*0000</td>
+              <td>60</td>
+              <td>00:23,345</td>
+            </tr>
+            <tr>
+              <td>9</td>
+              <td>*0000</td>
+              <td>*0000</td>
+              <td>60</td>
+              <td>00:23,345</td>
+            </tr>
+            <tr>
+              <td>10</td>
+              <td>*0000</td>
+              <td>*0000</td>
+              <td>60</td>
+              <td>00:23,345</td>
+            </tr>
+            <tr class="separator">
+              <td colspan="5">
+                <img src="./../assets/img/svg/separator.svg" alt="" />
+              </td>
+            </tr>
+            <tr class="you">
+              <td>2</td>
+              <td colspan="2">ВАШ РЕЗУЛЬТАТ</td>
+              <td>60</td>
+              <td>00:23,345</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <footer class="footer">
+          <a href="./../game-room" class="button small">ИГРАТЬ ЕЩЕ РАЗ</a>
+          <a href="./../game-room" class="button small" data-popup-open="how_to_get">КАК ПОЛУЧИТЬ ПРИЗ</a>
+          <a href="#" class="link">Вернуться в розыгрыш</a>
+        </footer>
+      </section>
+    </main>
+
+    <!--POPUPS-->
+    <div class="backdrop" data-backdrop>
+      <div class="popup" data-popup>
+        <!--Как получить приз-->
+        <div class="popup-content" id="how_to_get">
+          <button class="popup-close" data-popup-close></button>
+          <p class="popup__subtitle">
+            В период с&nbsp;08.10.2025&nbsp;г. по 13.01.2026&nbsp;г. приобретайте продукцию «Dirol», «Picnic», «Halls» от&nbsp;100&nbsp;р.
+            в&nbsp;«Магнит у&nbsp;дома», «Магнит&nbsp;Семейный», «Магнит&nbsp;Экстра», «Магнит&nbsp;Опт», в&nbsp;разделе «Доставка» мобильного
+            приложения, активировав участие в&nbsp;Акции в&nbsp;клубе «pro.здоровые привычки», и&nbsp;становитесь участником розыгрыша еженедельных
+            призов и&nbsp;главного приза. Для участия в&nbsp;розыгрыше специального приза принимайте участие в&nbsp;игре
+            «Открой&nbsp;призовую&nbsp;реальность» и&nbsp;занимайте место в&nbsp;ТОП-10 рейтинга.
+          </p>
+          <p class="popup__subtitle">
+            Количество призов и&nbsp;акционных товаров ограничено. Подробности об&nbsp;организаторе акции, количестве призов, сроках, месте
+            и&nbsp;порядке их получения в&nbsp;Правилах Акции в&nbsp;клубе «pro.здоровые&nbsp;привычки» мобильного приложения.
+          </p>
+
+          <button class="button button--blue full small" data-popup-close>Закрыть</button>
+        </div>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/choices.js/public/assets/scripts/choices.min.js"></script>
+    <script src="./../assets/js/scripts.js" type="module"></script>
+  </body>
+</html>

@@ -1,0 +1,36 @@
+:root {
+  --regular: 'montserrat-regular', sans-serif;
+  --got: 'got-regular', sans-serif;
+  --tektur: 'tektur', sans-serif;
+  --bold: 'epilepsysans-bold', sans-serif;
+  --700: 'songerse-bold', sans-serif;
+  --400: 'songerse-regular', sans-serif;
+
+  --bg: #316bc0;
+  --white: #ffffff;
+  --color: #3b2164;
+  --yellow: #ffd702;
+  --black: #000000;
+  --grey: #f0f1f1;
+  --red: #e6193a;
+  --invalid: #ff002b;
+  --green: #00ff36;
+  --blue: #01f8ff;
+  --blue-dark: #041e65;
+}
+
+@import 'mixins';
+@import 'fonts';
+@import 'reset';
+@import 'preloader';
+@import 'navigation';
+@import 'buttons';
+@import 'typography';
+@import 'select';
+@import 'section__main';
+@import 'section__rules';
+@import 'section__gameroom';
+@import 'section__level';
+@import 'section__scores';
+@import 'footer';
+@import 'popup';

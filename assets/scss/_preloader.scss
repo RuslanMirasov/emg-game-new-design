@@ -1,0 +1,72 @@
+.preloader {
+  display: flex;
+  position: fixed;
+  flex-direction: column;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  min-height: 100vh;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  z-index: 50;
+  transition: 0.6s;
+  opacity: 1;
+  visibility: visible;
+  pointer-events: all;
+  background: url('../img/preloader.webp') no-repeat 20% center/cover;
+  overflow: hidden;
+  &.hidden {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+  }
+}
+
+.preloader__content {
+  display: flex;
+  position: relative;
+  width: 100%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  width: 538px;
+  height: 255px;
+  background: url('../img/preloader-text.webp') no-repeat center center/contain;
+
+  span {
+    display: block;
+    text-align: center;
+    text-transform: uppercase;
+    color: #01f8ff;
+    font-size: 30px;
+    line-height: 40px;
+    font-family: var(--got);
+    letter-spacing: -0.05em;
+    text-shadow: 1px 0 #01f8ff, -1px 0 #01f8ff, 0px 1px #01f8ff, 0px 4px 0px rgba(0, 0, 0, 0.4);
+  }
+}
+
+.preloader__video {
+  display: flex;
+  position: absolute;
+  bottom: calc(100% - 50px);
+  width: 100px;
+  height: 90px;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  margin: 0 auto;
+  pointer-events: none;
+  background: url('../img/svg/sota.svg') no-repeat center center/cover;
+
+  video {
+    display: block;
+    width: 64px;
+    height: 64px;
+    pointer-events: none;
+  }
+}
