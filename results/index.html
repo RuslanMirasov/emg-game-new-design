@@ -17,7 +17,7 @@
       <div class="preloader__content">
         <div class="preloader__video">
           <video autoplay loop muted playsinline preload="auto">
-            <source src="./assets/img/preloader.mp4" type="video/mp4" />
+            <source src="./../assets/img/preloader.mp4" type="video/mp4" />
           </video>
         </div>
       </div>
@@ -25,15 +25,20 @@
 
     <main class="main">
       <section class="section section--scores">
-        <h1 class="title title--h2">Рейтинг <br />призовой реальности</h1>
+        <div class="results-header">
+          <h1 class="title">Рейтинг призовой <br />реальности</h1>
+        </div>
 
-        <select data-select name="time-period" onchange="console.log({name:this.name, value: this.value})" class="filter">
-          <option value="01.06.2025-05.06.2025">01.06.2025&nbsp;-&nbsp;05.06.2025</option>
-          <option value="08.06.2025-12.06.2025">08.06.2025&nbsp;-&nbsp;12.06.2025</option>
-          <option value="15.06.2025-19.06.2025">15.06.2025&nbsp;-&nbsp;19.06.2025</option>
-          <option value="22.06.2025-26.06.2025">22.06.2025&nbsp;-&nbsp;26.06.2025</option>
-          <option value="29.06.2025-03.07.2025">29.06.2025&nbsp;-&nbsp;03.07.2025</option>
-        </select>
+        <div class="time-period">
+          <select data-select name="time-period" onchange="console.log({name:this.name, value: this.value})" class="filter">
+            <option value="01.06.2025-05.06.2025">01.06.2025&nbsp;-&nbsp;05.06.2025</option>
+            <option value="08.06.2025-12.06.2025">08.06.2025&nbsp;-&nbsp;12.06.2025</option>
+            <option value="15.06.2025-19.06.2025">15.06.2025&nbsp;-&nbsp;19.06.2025</option>
+            <option value="22.06.2025-26.06.2025">22.06.2025&nbsp;-&nbsp;26.06.2025</option>
+            <option value="29.06.2025-03.07.2025">29.06.2025&nbsp;-&nbsp;03.07.2025</option>
+          </select>
+          <div class="select-backdrop"></div>
+        </div>
 
         <table class="results">
           <thead>
@@ -116,23 +121,18 @@
               <td>60</td>
               <td>00:23,345</td>
             </tr>
-            <tr class="separator">
-              <td colspan="5">
-                <img src="./../assets/img/svg/separator.svg" alt="" />
-              </td>
-            </tr>
             <tr class="you">
-              <td>2</td>
-              <td colspan="2">ВАШ РЕЗУЛЬТАТ</td>
               <td>60</td>
+              <td colspan="2">ВАШ РЕЗУЛЬТАТ</td>
+              <td>5</td>
               <td>00:23,345</td>
             </tr>
           </tbody>
         </table>
 
         <footer class="footer">
-          <a href="./../game-room" class="button small">ИГРАТЬ ЕЩЕ РАЗ</a>
-          <a href="./../game-room" class="button small" data-popup-open="how_to_get">КАК ПОЛУЧИТЬ ПРИЗ</a>
+          <a href="./../game-room" class="button small"> <span>ИГРАТЬ ЕЩЕ РАЗ</span> </a>
+          <a href="#" data-popup-open="how_to_get" class="button small"> <span>КАК ПОЛУЧИТЬ ПРИЗ</span> </a>
           <a href="#" class="link">Вернуться в розыгрыш</a>
         </footer>
       </section>
@@ -144,19 +144,20 @@
         <!--Как получить приз-->
         <div class="popup-content" id="how_to_get">
           <button class="popup-close" data-popup-close></button>
+
           <p class="popup__subtitle">
-            В период с&nbsp;08.10.2025&nbsp;г. по 13.01.2026&nbsp;г. приобретайте продукцию «Dirol», «Picnic», «Halls» от&nbsp;100&nbsp;р.
-            в&nbsp;«Магнит у&nbsp;дома», «Магнит&nbsp;Семейный», «Магнит&nbsp;Экстра», «Магнит&nbsp;Опт», в&nbsp;разделе «Доставка» мобильного
-            приложения, активировав участие в&nbsp;Акции в&nbsp;клубе «pro.здоровые привычки», и&nbsp;становитесь участником розыгрыша еженедельных
-            призов и&nbsp;главного приза. Для участия в&nbsp;розыгрыше специального приза принимайте участие в&nbsp;игре
-            «Открой&nbsp;призовую&nbsp;реальность» и&nbsp;занимайте место в&nbsp;ТОП-10 рейтинга.
+            В период с&nbsp;14.01.2026 по&nbsp;15.03.2026&nbsp;г. приобретайте продукцию «Dirol», «Picnic», «Halls» от&nbsp;100&nbsp;р. в&nbsp;«Магнит
+            у&nbsp;дома», «Магнит Семейный», «Магнит Экстра», «Магнит Опт», в&nbsp;разделе «Доставка» мобильного приложения, активировав участие
+            в&nbsp;Акции в&nbsp;клубе «pro.здоровые привычки», и&nbsp;становитесь участником розыгрыша еженедельных призов и&nbsp;главного приза. Для
+            участия в&nbsp;розыгрыше специального приза принимайте участие в&nbsp;игре «Открой призовую реальность» и&nbsp;занимайте место
+            в&nbsp;ТОП-10 рейтинга.
           </p>
           <p class="popup__subtitle">
             Количество призов и&nbsp;акционных товаров ограничено. Подробности об&nbsp;организаторе акции, количестве призов, сроках, месте
-            и&nbsp;порядке их получения в&nbsp;Правилах Акции в&nbsp;клубе «pro.здоровые&nbsp;привычки» мобильного приложения.
+            и&nbsp;порядке их получения в&nbsp;Правилах Акции в&nbsp;клубе «pro.здоровые привычки» мобильного приложения.
           </p>
 
-          <button class="button button--blue full small" data-popup-close>Закрыть</button>
+          <button class="button button--green full small" data-popup-close><span>Закрыть</span></button>
         </div>
       </div>
     </div>

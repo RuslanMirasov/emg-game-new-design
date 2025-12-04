@@ -3,7 +3,7 @@
   gap: 20px;
   overflow: hidden;
   z-index: 1;
-  height: 50px;
+  height: 46px;
   justify-content: center;
   align-items: center;
   align-content: center;
@@ -20,12 +20,13 @@
     font-family: var(--avg);
     font-size: 30px;
     line-height: 1;
+    padding-top: 4px;
+    pointer-events: none;
   }
 
-  &.button--blue {
-    background: var(--color);
+  &.button--green {
+    background: var(--green-dark);
     color: var(--white);
-    text-shadow: 1px 0 var(--white), 0px 1px var(--white);
   }
 
   &.full {
@@ -34,11 +35,11 @@
   }
 
   &.small {
-    height: 46px;
+    height: 40px;
     padding: 0px 20px;
     span {
-      font-size: 30px;
-      padding-top: 4px;
+      font-size: 20px;
+      padding-top: 2px;
     }
   }
 }
