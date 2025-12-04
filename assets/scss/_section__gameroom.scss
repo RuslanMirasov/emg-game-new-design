@@ -8,7 +8,7 @@
   display: flex;
   position: absolute;
   left: -5px;
-  top: -30px;
+  top: -10px;
   justify-content: center;
   align-items: center;
   align-content: center;
@@ -17,13 +17,13 @@
 
   span {
     width: 100%;
-    padding-left: 14px;
-    color: var(--blue);
+    padding-left: 5px;
+    color: #671804;
     font-weight: 600;
     position: relative;
     z-index: 2;
-    font-size: 13px;
-    transform: rotate(5deg) translate(39px, 11px);
+    font-size: 16px;
+    transform: rotate(6deg) translate(36px, 2px);
   }
 }
 
@@ -34,29 +34,18 @@
   align-items: center;
   align-content: center;
   width: 100%;
-  height: 35px;
-  background: url('../img/main/navigation-bg.webp') repeat-x center center;
-  background-size: 1px 35px;
-  color: var(--blue);
-  margin-top: 18px;
-  margin-bottom: 4px;
-  &:before {
-    content: '';
-    left: 50%;
-    top: 0px;
-    margin-left: -147px;
-    display: block;
-    position: absolute;
-    width: 294px;
-    height: 35px;
-    background: url('../img/game/panel-score-bg.webp') no-repeat center center/contain;
-  }
-
+  height: 34px;
+  background: #75b72a url('../img/game/panel-score-bg.webp') no-repeat center center;
+  background-size: 375px 34px;
+  color: var(--white);
+  flex-shrink: 0;
   span {
     display: inline-block;
     position: relative;
-    font-size: 18px;
+    font-size: 22px;
     line-height: 1;
+    text-transform: uppercase;
+    text-shadow: 0px 1px 3px #0e511e;
   }
 }
 
@@ -64,25 +53,22 @@
   display: flex;
   position: relative;
   width: 100%;
-  max-width: 714px;
   height: 180px;
-  flex-wrap: wrap;
-  justify-content: center;
+  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
   align-content: center;
-  background: url('../img/game/panel-bg.webp') no-repeat center top;
-  background-size: 714px auto;
+  background: var(--white);
   z-index: 1;
-  margin-top: -10px;
 
-  .footer {
-    a {
-      margin-top: 5px;
-    }
-    .sound-button {
-      right: 5px;
-      bottom: 15px;
-    }
+  &:before {
+    content: '';
+    position: absolute;
+    bottom: 100%;
+    pointer-events: none;
+    width: 100%;
+    height: 70px;
+    background: url('../img/game/clouds.webp') no-repeat center top/cover;
   }
 }
 
@@ -90,52 +76,37 @@
   display: flex;
   position: relative;
   width: 100%;
+  max-width: 450px;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
   align-content: center;
-  gap: 13.5px;
-  margin-bottom: 0px;
-  margin-top: 7.5px;
+  margin: 0px auto;
+  padding: 0px 10px;
   li {
-    width: 60px;
+    width: 80px;
     text-align: center;
     span {
-      font-size: 15px;
+      font-family: var(--avg);
+      font-size: 18px;
       line-height: 1;
-      font-weight: 600;
     }
     picture {
       display: flex;
       position: relative;
-      width: 60px;
-      height: 52px;
+      width: 80px;
+      height: 80px;
       justify-content: center;
       align-items: center;
       align-content: center;
-      margin-bottom: 5px;
+      background: url('../img/svg/product.svg') no-repeat center center/cover;
       img {
         position: absolute;
         max-width: 100%;
         max-height: 100%;
       }
       &.active {
-        background: url('../img/svg/ok-border.svg') no-repeat center center;
-        background-size: 100% 100%;
-        &:before {
-          content: '';
-          display: block;
-          width: 12px;
-          height: 12px;
-          border-radius: 12px;
-          position: absolute;
-          right: 9px;
-          top: -4px;
-          flex-shrink: 0;
-          background: url('../img/svg/ok.svg') no-repeat center center;
-          background-size: 100% 100%;
-          z-index: 2;
-        }
+        background: url('../img/svg/product-active.svg') no-repeat center center/cover;
       }
     }
   }
@@ -144,7 +115,7 @@
 .level-iframe {
   display: flex;
   width: 100%;
-  height: calc(100svh - 214px);
+  height: calc(100svh - 180px);
   position: relative;
   max-width: 884px;
   z-index: 1;
@@ -153,8 +124,7 @@
 
 .test000 {
   display: block;
-  background: url('../img/preloader.webp') no-repeat center center;
-  background-size: 300% auto;
+  background: url('../img/preloader.webp') no-repeat center center/cover;
   width: 100%;
-  height: calc(100vh - 172px);
+  height: calc(100vh - 180px);
 }

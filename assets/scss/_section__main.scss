@@ -1,6 +1,6 @@
 .section--main {
-  background: #00113f url('../img/main/bg.webp') no-repeat center center;
-  background-size: 480px auto;
+  background: var(--bg) url('../img/main/bg.webp') no-repeat center top;
+  background-size: 380px auto;
 
   &:before {
     content: '';
@@ -10,31 +10,26 @@
     height: 320px;
     left: 0px;
     bottom: 0px;
-    background: url('../img/main/bg-shadow.webp') no-repeat center bottom;
+    background: url('../img/main/shadow.webp') no-repeat center bottom;
     background-size: 100% 100%;
   }
 
-  .title {
-    margin-top: 4vh;
-    margin-bottom: 280px;
-  }
-
-  @media (min-height: 800px) {
-    background-size: auto 100%;
-    .title {
-      margin-top: 8vh;
+  @media (min-width: 376px) {
+    background-size: 110% auto;
+    @media (orientation: landscape) {
+      background-size: 380px auto;
     }
   }
-}
 
-@media (max-height: 667px) {
-  .section--main {
-    background-size: 420px auto;
+  .title {
+    margin-top: 20px;
+    margin-bottom: 180px;
 
-    .title {
-      margin-top: 20px;
-      margin-bottom: 180px;
-      font-size: 26px;
+    @media (orientation: landscape) {
+      margin-bottom: 240px;
+    }
+    img {
+      width: 240px;
     }
   }
 }

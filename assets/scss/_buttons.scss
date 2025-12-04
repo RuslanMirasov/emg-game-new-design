@@ -1,26 +1,26 @@
 .button {
-  display: inline-flex;
+  display: flex;
   gap: 20px;
   overflow: hidden;
   z-index: 1;
-  min-height: 50px;
+  height: 50px;
   justify-content: center;
   align-items: center;
   align-content: center;
   position: relative;
-  font-size: 24px;
-  line-height: 1;
   color: var(--blue-dark);
-  font-family: var(--got);
-  padding: 8px 40px 12px 40px;
   z-index: 1;
   user-select: none;
   outline: none;
   border-radius: 50px;
   text-transform: uppercase;
   background: var(--white);
-  letter-spacing: -0.1em;
-  text-shadow: 1px 0 var(--blue-dark), -1px 0 var(--blue-dark), 0px 1px var(--blue-dark);
+  span {
+    display: block;
+    font-family: var(--avg);
+    font-size: 30px;
+    line-height: 1;
+  }
 
   &.button--blue {
     background: var(--color);
@@ -34,8 +34,11 @@
   }
 
   &.small {
-    font-size: 18px;
-    min-height: 46px;
-    padding: 8px 20px 12px 20px;
+    height: 46px;
+    padding: 0px 20px;
+    span {
+      font-size: 30px;
+      padding-top: 4px;
+    }
   }
 }

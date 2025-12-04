@@ -1,4 +1,11 @@
 @font-face {
+  font-family: 'avg65';
+  src: url('../fonts/avg65.woff2') format('woff2'), url('../fonts/avg65.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
   font-family: 'got-regular';
   src: url('../fonts/got-regular.woff2') format('woff2'), url('../fonts/got-regular.woff') format('woff');
   font-weight: 400;
