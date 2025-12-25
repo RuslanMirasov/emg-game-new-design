@@ -212,14 +212,8 @@ iframe::-webkit-scrollbar {
   opacity: 1;
   visibility: visible;
   pointer-events: all;
-  background: url("../img/preloader.webp") no-repeat 20% center/cover;
+  background: url("../img/preloader.webp") no-repeat center center/cover;
   overflow: hidden;
-}
-@media (max-width: 599px) {
-  .preloader {
-    background-size: 807px 807px;
-    background-position: -80px -110px;
-  }
 }
 .preloader.hidden {
   opacity: 0;
